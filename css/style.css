@@ -1,0 +1,51 @@
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color:#CCEFFF;
+}
+
+#showcase{
+    background-image: url('/img/MochiSeqBlue.jpg');
+    height:100%;
+}
+.container{
+    display:flex;
+    width:100%;
+    height:100vh;
+}
+.titles{
+    position:absolute;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    top: 15%;
+    left:50%;
+}
+.heading{
+    font-size: 72px;
+    font-weight: 800;
+}
+
+.subheader{
+    font-size: 16px;
+    font-weight:600;
+}
+.phrases{
+    position:absolute;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    top: 93%;
+    left:50%;
+    font-size:24px;
+}
+.mochiBlueImg{
+    width:100%;
+}
+
+.telegramButton{
+    position: absolute;
+    text-align: center;
+    width:20%;
+    transform: translate(-50%, -50%);
+    top: 80%;
+    left:50%;
+}
