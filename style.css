@@ -24,29 +24,57 @@ body{
     font-size: 72px;
     font-weight: 800;
 }
+@media only screen and (max-width:480px){
+    .heading{
+        font-size:52px;
+    }
+    .subheader{
+        font-size:14px;
+    }
+}
+
+@media only screen and (min-width:480px){
+    .phrases{
+        font-size: 20px;
+    }
+}
 
 .subheader{
     font-size: 16px;
     font-weight:600;
 }
+
 .phrases{
     position:absolute;
     text-align: center;
     transform: translate(-50%, -50%);
-    top: 93%;
+    top: 90%;
     left:50%;
-    font-size:24px;
+    width:90%;
 }
 .mochiBlueImg{
     width:100%;
+    position: absolutes;
 }
 
 .telegramButton{
     position: absolute;
     text-align: center;
-    width:20%;
+    width:25%;
     transform: translate(-50%, -50%);
-    top: 80%;
+    top: 78%;
     left:50%;
 }
+
+.containerAbsolutes{
+    max-width:30%;
+}
+
+@media screen and (max-width:991px) 
+{
+    .telegramButton{
+        width:43%;
+    }
+}
+
 
