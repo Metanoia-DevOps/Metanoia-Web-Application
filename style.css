@@ -17,7 +17,7 @@ html{
 }
 
 #showcase{
-    background-image: url('/img/MochiSeqBlue.jpg');
+    background-image: url('./img/MochiSeqBlue.jpg');
     height:100%;
 }
 .container{
@@ -73,7 +73,7 @@ html{
 
 }
 .mochiBlueImg{
-    width:5px;
+    width:100%;
     position: absolute;
 }
 
