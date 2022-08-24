@@ -2,6 +2,18 @@
 body{
     font-family: 'Poppins', sans-serif;
     color:#CCEFFF;
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+    height: 50%;
+}
+
+html{
+    background: url("./img/Background.png")  no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 #showcase{
@@ -26,7 +38,7 @@ body{
 }
 @media only screen and (max-width:480px){
     .heading{
-        font-size:52px;
+        font-size:36px;
     }
     .subheader{
         font-size:14px;
@@ -52,11 +64,24 @@ body{
     left:50%;
     width:90%;
 }
-.mochiBlueImg{
+.mochiContainer{
+    display: flex;
     width:100%;
-    position: absolutes;
+    align-self: center;
+    justify-content: center;
+    height:50%;
+
+}
+.mochiBlueImg{
+    width:5px;
+    position: absolute;
 }
 
+.mochiBlueBackground{
+    width:100%;
+    position:absolute;
+    z-index: -1;
+}
 .telegramButton{
     position: absolute;
     text-align: center;
@@ -73,8 +98,6 @@ body{
 @media screen and (max-width:991px) 
 {
     .telegramButton{
-        width:43%;
+        width:40%;
     }
 }
-
-
