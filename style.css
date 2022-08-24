@@ -76,15 +76,16 @@ html{
 }
 .mochiBlueImg{
     width:100%;
+    padding-top:1rem;
     position: absolute;
 }
 
 .telegramButton{
     position: absolute;
     text-align: center;
-    width:25%;
+    width:20%;
     transform: translate(-50%, -50%);
-    top: 78%;
+    top: 75%;
     left:50%;
 }
 
@@ -95,6 +96,6 @@ html{
 @media screen and (max-width:991px) 
 {
     .telegramButton{
-        width:40%;
+        width:35%;
     }
 }
