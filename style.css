@@ -37,7 +37,6 @@ html{
     font-weight: 800;
 }
 
-
 .subheader{
     font-size: 16px;
     font-weight:600;
@@ -59,7 +58,6 @@ html{
 }
 .mochiBlueImg{
     width:100%;
-    padding-top:1rem;
     position: absolute;
 }
 
