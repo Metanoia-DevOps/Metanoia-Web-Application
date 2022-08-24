@@ -36,22 +36,50 @@ html{
     font-size: 72px;
     font-weight: 800;
 }
+
+
+.subheader{
+    font-size: 16px;
+    font-weight:600;
+}
+
+.phrases{
+    position:absolute;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    top: 80%;
+    left:50%;
+    width:90%;
+}
+.mochiContainer{
+    display: flex;
+    width:100%;
+    align-self: center;
+    justify-content: center;
+}
+.mochiBlueImg{
+    width:100%;
+    padding-top:1rem;
+    position: absolute;
+}
+
+.telegramButton{
+    width:20%;
+    padding-bottom:1rem;
+}
+
 @media only screen and (max-width:480px){
     .heading{
-        font-size:36px;
+        font-size:56px;
     }
     .subheader{
-        font-size:14px;
-    }
-    .mochiBlueImg{
-        width:30%;
+        font-size:16px;
     }
     .telegramButton{
-        width:35%;
-        top:60%;
+        width:40%;
     }
-    .phrases {
-        top:75%;
+    .mochiContainer{
+        padding-top:2rem;
     }
 }
 
@@ -64,47 +92,6 @@ html{
 @media screen and (max-width:991px) 
 {
     .telegramButton{
-        width:35%;
+        width:45%;
     }
 }
-
-.subheader{
-    font-size: 16px;
-    font-weight:600;
-}
-
-.phrases{
-    position:absolute;
-    text-align: center;
-    transform: translate(-50%, -50%);
-    top: 85%;
-    left:50%;
-    width:90%;
-}
-.mochiContainer{
-    display: flex;
-    width:100%;
-    align-self: center;
-    justify-content: center;
-
-}
-.mochiBlueImg{
-    width:100%;
-    padding-top:1rem;
-    position: absolute;
-}
-
-.telegramButton{
-    position: absolute;
-    text-align: center;
-    width:20%;
-    transform: translate(-50%, -50%);
-    top: 70%;
-    left:50%;
-}
-
-.containerAbsolutes{
-    max-width:30%;
-}
-
-
