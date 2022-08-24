@@ -46,11 +46,25 @@ html{
     .mochiBlueImg{
         width:30%;
     }
+    .telegramButton{
+        width:35%;
+        top:60%;
+    }
+    .phrases {
+        top:75%;
+    }
 }
 
 @media only screen and (min-width:480px){
     .phrases{
         font-size: 20px;
+    }
+}
+
+@media screen and (max-width:991px) 
+{
+    .telegramButton{
+        width:35%;
     }
 }
 
@@ -93,9 +107,4 @@ html{
     max-width:30%;
 }
 
-@media screen and (max-width:991px) 
-{
-    .telegramButton{
-        width:35%;
-    }
-}
+
