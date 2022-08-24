@@ -16,10 +16,6 @@ html{
     background-size: cover;
 }
 
-#showcase{
-    background-image: url('./img/MochiSeqBlue.jpg');
-    height:100%;
-}
 .container{
     display:flex;
     width:100%;
