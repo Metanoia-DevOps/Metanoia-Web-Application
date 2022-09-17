@@ -22,9 +22,13 @@ html{
 
 .container{
     display:flex;
+    flex-direction: column;
     width:100%;
     height:100vh;
+    align-items: center;
+    justify-content: center;
 }
+
 .titles{
     position:absolute;
     text-align: center;
@@ -40,6 +44,11 @@ html{
 .subheader{
     font-size: 16px;
     font-weight:600;
+}
+
+.subheader2{
+    font-size: 16px;
+    font-weight:800;
 }
 
 .phrases{
@@ -64,6 +73,141 @@ html{
 .telegramButton{
     width:20%;
     padding-bottom:1rem;
+}
+
+form[type=colorPalette] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    flex-direction: column;
+}
+
+input[type=colorPalette]{
+    background-color:#fff;
+    border:none;
+    border-radius: 1.4em;
+    padding:0.7em 2em;
+    margin:1rem;
+}
+
+input[type=colors]{
+    background-color:#fff;
+    border:none;
+    border-radius: 1.4em;
+    padding:0.7em;
+    margin:1rem;
+}
+button[type=submit]{
+    outline : none ;
+    border : none ;
+    padding : 0.7em 2em ;
+    font-size : 1.1em ;
+    font-weight: 600;
+    border-radius : 1.4em ;
+    background : #D1FDFE ;
+    color : #28B4C1 ;
+    cursor : pointer ;
+    transition : 0.4s ;
+    margin:1rem;
+}
+
+.container-form{
+    background : #28B4C1;
+    border-radius: 1.4em;
+    box-shadow: inset;
+    padding: 1.2rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.colors{
+      margin : 0 ;
+      background : #f1f1f1;
+      min-height : 50vh ;
+      display: flex ;
+      justify-content : center ;
+      align-items : center ;
+      padding: 0 2em ;
+}
+
+.pallete Button {
+    outline : none ;
+    border : none ;
+    padding : 0.7em 2em ;
+    font-size : 1.1em ;
+    position : absolute ;
+    top : -1em ;
+    left : 50%;
+    transform : translateX( -50%) ;
+    border-radius : 1.4em ;
+    background : #1f1f1f ;
+    color : #fff ;
+    font-weight: 600;
+    cursor : pointer ;
+    transition : 0.4s ;
+}
+
+.pallete button :hover {
+    background : #fff;
+    color:#1f1f1f;
+    box-shadow: 0px 0px 15px
+      rgba( 0 , 0 , 0 , 0.2 ) ;
+   }
+
+.pallete {
+    margin-top: 3rem;
+    position : relative ;
+    background : #fff ;
+    width : 45em ;
+    height : 25em ;
+    border-radius : 20px ;
+    box-shadow : 0px 25px 50px -12px
+      rgba( 0 , 0 , 0 , 0.1 ) ;
+    text-align : center ;
+    color : #1f1f1f ;
+    box-sizing : border-box ;
+}
+
+.colors {
+    display : flex ;
+    justify-content : space-between ;
+    align-items : center ;
+    overflow-y : hidden ;
+    height : 100% ;    
+    border-radius : 20px ;
+}
+
+.colors > div {
+ width : 25% ;
+}
+
+.color {
+ background : #ccc ;
+ height : 17em ;
+ width : 100% ;
+}
+
+.colors h4 {
+ font-size : 0.9em ;
+}
+
+.fade-in {
+ opacity : 0;
+ animation: fadeIn 0.4s ease-in;
+}
+
+@keyframes fadeIn{
+    to{opacity:1;}
+}
+
+@media screen and ( max-width : 500px ) {
+    body { padding : 2em ; }
+    .pallete { height : initial ; }
+    .colors { flex-direction : column ; }
+    .colors  > div { width : 100% ; } 
 }
 
 @media only screen and (max-width:480px){
