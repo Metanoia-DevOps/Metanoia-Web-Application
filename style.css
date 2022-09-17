@@ -41,6 +41,10 @@ html{
     font-weight: 800;
 }
 
+.brandHeading{
+    font-size: 72px;
+    font-weight: 800;
+}
 .subheader{
     font-size: 16px;
     font-weight:600;
@@ -87,7 +91,7 @@ input[type=colorPalette]{
     background-color:#fff;
     border:none;
     border-radius: 1.4em;
-    padding:0.7em 2em;
+    padding:0.7em 1.3em;
     margin:1rem;
 }
 
@@ -112,6 +116,10 @@ button[type=submit]{
     margin:1rem;
 }
 
+.colorsWordsContainer{
+    display:flex;
+    flex-direction: row;
+}
 .container-form{
     background : #28B4C1;
     border-radius: 1.4em;
@@ -139,8 +147,8 @@ button[type=submit]{
     padding : 0.7em 2em ;
     font-size : 1.1em ;
     position : absolute ;
-    top : -1em ;
     left : 50%;
+    top:150%;
     transform : translateX( -50%) ;
     border-radius : 1.4em ;
     background : #1f1f1f ;
@@ -159,7 +167,6 @@ button[type=submit]{
 
 .pallete {
     margin-top: 3rem;
-    position : relative ;
     background : #fff ;
     width : 45em ;
     height : 25em ;
@@ -203,16 +210,18 @@ button[type=submit]{
     to{opacity:1;}
 }
 
-@media screen and ( max-width : 500px ) {
-    body { padding : 2em ; }
-    .pallete { height : initial ; }
-    .colors { flex-direction : column ; }
-    .colors  > div { width : 100% ; } 
-}
+
 
 @media only screen and (max-width:480px){
     .heading{
         font-size:56px;
+    }
+    .brandHeading{
+        font-size: 26px;
+
+    }
+    .pallete{
+        display: none;
     }
     .subheader{
         font-size:16px;
@@ -223,6 +232,10 @@ button[type=submit]{
     .mochiContainer{
         padding-top:2rem;
     }
+    .colorsWordsContainer{
+        flex-direction: column;
+    }
+
 }
 
 @media only screen and (min-width:480px){

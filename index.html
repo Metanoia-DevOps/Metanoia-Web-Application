@@ -49,22 +49,33 @@
     </div>
 
     <div class="container">
-        <div class="heading"> Brand Color Generator!</div>
+        <div class="brandHeading"> Brand Color Generator!</div>
 
         <form type="colorPalette" action="https://sheetdb.io/api/v1/45lvg8git00gv" method="POST" id="sheetdb-form">
             <div class="container-form">
                 <div class="subheader2"> In 3 words, describe how would you like people to see you as for your dream career role! </div>    
-                <div>
-                    Name: <input type="colorPalette" name="data[Name]">
-                    3 Words: <input type="colorPalette" name="data[Phrase]">
+                <div class="colorsWordsContainer">
+                    <div>
+                        Name:<input type="colorPalette" name="data[Name]">
+                    </div>
+                    <div>
+                        3 Words:<input type="colorPalette" name="data[Phrase]">
+                    </div>
                 </div>
-    
                 <div class="subheader2"> And what would be 3 colors that best describes this! (Copy the hex numbers) </div>    
-                <div>
-                    Color 1: <input type="colors" mame="data[Color 1]">
-                    Color 2: <input type="colors" name="data[Color 2]">
-                    Color 3: <input type="colors" name="data[Color 3]">
+                
+                <div class="colorsWordsContainer">
+                    <div>
+                        Color 1: <input type="colors" mame="data[Color 1]">
+                    </div>
+                    <div>
+                        Color 2: <input type="colors" name="data[Color 2]">
+                    </div>
+                    <div>
+                        Color 3: <input type="colors" name="data[Color 3]">
+                    </div>
                 </div>
+               
                 <button type="submit">Submit</button> 
 
             </div>
