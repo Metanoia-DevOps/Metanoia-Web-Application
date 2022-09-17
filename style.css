@@ -7,7 +7,7 @@ body{
     overflow-x:hidden;
     height: 100%;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-position: center;
     background-attachment: fixed;
 }
@@ -17,7 +17,7 @@ html{
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: 100% 100vh;
+    background-size: 100% 150vh;
 }
 
 .container{
@@ -42,7 +42,7 @@ html{
 }
 
 .brandHeading{
-    font-size: 54px;
+    font-size: 72px;
     font-weight: 800;
 }
 .subheader{
@@ -120,7 +120,7 @@ button[type=submit]{
     display:flex;
     flex-direction: row;
 }
-.container-form{
+.formContainer{
     background : #28B4C1;
     border-radius: 1.4em;
     box-shadow: inset;
@@ -129,16 +129,25 @@ button[type=submit]{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-top:-20rem;
 }
 
 .colors{
-      margin : 0 ;
+      margin : 0;
       background : #f1f1f1;
       min-height : 50vh ;
       display: flex ;
       justify-content : center ;
       align-items : center ;
       padding: 0 2em ;
+}
+
+.colorPaletteContainer{
+    position: absolute;
+    margin-top:35rem;
+    left: 50%;
+    transform : translateX( -50%) ;
+    max-width: fit-content;
 }
 
 .pallete Button {
@@ -148,7 +157,7 @@ button[type=submit]{
     font-size : 1.1em ;
     position : absolute ;
     left : 50%;
-    top:150%;
+    margin-top:-1rem;
     transform : translateX( -50%) ;
     border-radius : 1.4em ;
     background : #1f1f1f ;
@@ -166,7 +175,6 @@ button[type=submit]{
    }
 
 .pallete {
-    margin-top: 3rem;
     background : #fff ;
     width : 45em ;
     height : 25em ;
@@ -183,6 +191,7 @@ button[type=submit]{
     justify-content : space-between ;
     align-items : center ;
     overflow-y : hidden ;
+    overflow-x: hidden;
     height : 100% ;    
     border-radius : 20px ;
 }
@@ -210,18 +219,15 @@ button[type=submit]{
     to{opacity:1;}
 }
 
-
-
 @media only screen and (max-width:480px){
     .heading{
         font-size:56px;
     }
     .brandHeading{
-        font-size: 26px;
-
+        font-size: 28px;
     }
-    .pallete{
-        display: none;
+    .colorPaletteContainer{
+        margin-top:75rem;
     }
     .subheader{
         font-size:16px;
@@ -234,6 +240,12 @@ button[type=submit]{
     }
     .colorsWordsContainer{
         flex-direction: column;
+    }
+    .formContainer{
+        margin-top:0rem;
+    }
+    .pallete{
+        width : 25em ;
     }
 
 }

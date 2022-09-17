@@ -49,10 +49,9 @@
     </div>
 
     <div class="container">
-        <div class="brandHeading"> Brand Color Generator!</div>
-
         <form type="colorPalette" action="https://sheetdb.io/api/v1/45lvg8git00gv" method="POST" id="sheetdb-form">
-            <div class="container-form">
+            <div class="formContainer">
+                <div class="brandHeading"> Brand Color Generator!</div>
                 <div class="subheader2"> In 3 words, describe how would you like people to see you as for your dream career role! </div>    
                 <div class="colorsWordsContainer">
                     <div>
@@ -75,35 +74,36 @@
                         Color 3: <input type="colors" name="data[Color 3]">
                     </div>
                 </div>
-               
                 <button type="submit">Submit</button> 
-
             </div>
-          </form>
+        </form>
 
-        <div class = "pallete">
-            <button onclick="generateColors()"> Generate New </button>
-            <div class = "colors">
-                <div>
-                    <h4 class = "hex" > #1234 </h4>
-                    <div class = "color" > </div>
+          <div class="colorPaletteContainer">
+            <div class = "pallete">
+                <button onclick="generateColors()"> Generate New </button>
+                    <div class = "colors">
+                        <div>
+                            <h4 class = "hex" > #1234 </h4>
+                            <div class = "color" > </div>
+                        </div>
+                        <div >
+                            <h4 class = "hex" > #1234 </h4 >
+                            <div class = "color" > </div>
+                        </div>
+                        <div>
+                            <h4 class = "hex" > #1234 </h4 >
+                            <div class = "color" > </div>
+                        </div>
+                        <div>
+                            <h4 class = "hex" > #1234 </h4 >
+                            <div class = "color" > </div>
+                        </div>
+                    </div>
                 </div>
-                <div >
-                    <h4 class = "hex" > #1234 </h4 >
-                    <div class = "color" > </div>
-                </div>
-                <div>
-                    <h4 class = "hex" > #1234 </h4 >
-                    <div class = "color" > </div>
-                </div>
-                <div>
-                    <h4 class = "hex" > #1234 </h4 >
-                    <div class = "color" > </div>
-                </div>
-            </div>
+           </div>
         </div>
-    </div>
 
+    
 
     <script>
         var form = document.getElementById('sheetdb-form');
