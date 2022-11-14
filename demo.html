@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@animxyz/core">
+
+    <title>Metanoia</title>
+    <!-- Import the component -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800;900&display=swap');
+        </style>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+        
+    <style>
+        :root {
+        --xyz-translate-default: 300%;
+        --xyz-ease-default: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        --xyz-stagger-default: 0.1s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container page-wrap xyz-in" >
+
+        <div class="titles" xyz="fade small stagger ease-out-back">
+            <div class="heading xyz-nested">Metanoia</div>
+            <div class="mochiContainer">
+                <img class= "mochiBlueImg xyz-in" xyz="duration-15 fade-0% down-5 back iterate-infinite direction-alternate-reverse" 
+                src="./img/box.png"/>
+            </div>
+        </div>
+        <canvas id="drawingCanvas"></canvas>
+        
+    </div>
+    
+    <script>
+        const canvas = document.querySelector('#drawingCanvas');
+
+        canvas.width=window.innerWidth;
+        canvas.height=window.innerHeight;
+
+        const avatar= document.createElement('img');
+        const avatar2= document.createElement('img');
+        avatar.src='img/mousemove3.png';
+        avatar2.src='img/MochiBlue.png';
+
+        const context = canvas.getContext('2d');
+        let paintbrush=avatar;
+
+        const handleMouseMove=(event)=>{
+            const left= event.clientX;
+            const top=event.clientY;
+            context.drawImage(paintbrush,left,top);
+        }
+        const handleClick=()=>{
+            paintbrush==avatar? paintbrush=avatar2: paintbrush=avatar;
+            console.log(paintbrush);
+        }
+        canvas.addEventListener('click', handleClick);
+        canvas.addEventListener('mousemove',handleMouseMove);
+    </script>
+
+    <script>
+        var form = document.getElementById('sheetdb-form');
+        form.addEventListener("submit", e => {
+          e.preventDefault();
+          fetch(form.action, {
+              method : "POST",
+              body: new FormData(document.getElementById("sheetdb-form")),
+          }).then(
+              response => response.json()
+          ).then((html) => {
+            // you can put any JS code here
+            alert('success')
+          });
+        });
+      </script>
+
+      <script>
+        const btn = document.querySelector ( 'button' ) ;
+        const color = document.querySelectorAll ( '.color' ) ;
+        const hex = document.querySelectorAll ( '.hex' ) ;
+        // Add a click event on the button
+        btn.addEventListener ( ' click ' , generateColors ) ;
+        function generateColors ( ) {
+            for (let i = 0; i < color.length ; i++) {
+            // Generate random color
+                const randomColor = Math.floor ( Math.random ( ) * 16777215 ).toString (16) ;
+            // Add the color as the background
+                color[i].style.background = "#" + randomColor;
+            // Add the animation
+                color[i].classList.add('fade-in' ) ;
+                setTimeout ( ( ) => color[i] .classList.remove('fade-in') , 400) ;
+            // Add the hex code above the color
+                hex[i].innerHTML = randomColor;
+            }
+        }
+      </script>
+
+</body>
+</html>
