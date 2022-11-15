@@ -1,6 +1,6 @@
 body {
     font-family: 'Poppins', sans-serif;
-    color: #CCEFFF;
+    color: #FFFFFF;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -74,16 +74,27 @@ html {
 .ml6 .text-wrapper {
     position: relative;
     display: inline-block;
-    padding-top: 0.01em;
-    padding-right: 0.05em;
-    padding-bottom: 0.005em;
+    padding-top: 0.2em;
+    padding-right: 0.1em;
+    padding-bottom: 0.1em;
     overflow: hidden;
 }
 
 .ml6 .letter {
     display: inline-block;
-    line-height: 0.1em;
+    line-height: 0.8em;
 }
+
+.ml13 {
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+  }
+  
+  .ml13 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
 
 .mochiContainer {
     display: flex;

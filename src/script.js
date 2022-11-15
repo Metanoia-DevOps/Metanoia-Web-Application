@@ -10,20 +10,49 @@ import anime from 'animejs/lib/anime.es.js';
 var textWrapper = document.querySelector('.ml6 .letters');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-anime.timeline({loop: true})
-  .add({
-    targets: '.ml6 .letter',
-    translateY: ["1.8em", 0],
-    translateZ: 0,
-    duration: 750,
-    delay: (el, i) => 50 * i
-  }).add({
-    targets: '.ml6',
-    opacity: 0,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 1000
-  });
+anime.timeline({ loop: true })
+    .add({
+        targets: '.ml6 .letter',
+        translateY: ["1.6em", 0],
+        translateZ: 0,
+        duration: 1500,
+        delay: (el, i) => 50 * i
+    }).add({
+        targets: '.ml6',
+        opacity: 0,
+        duration: 1000,
+        easing: "easeOutExpo",
+        delay: 1000
+    });
+
+// Wrap every letter in a span
+var phraseWrapper = document.querySelectorAll('.ml13');
+
+phraseWrapper.forEach(div => {
+
+    div.innerHTML = div.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+})
+
+
+
+anime.timeline({ loop: true })
+    .add({
+        targets: '.ml13 .letter',
+        translateY: [100, 0],
+        translateZ: 0,
+        opacity: [0, 1],
+        easing: "easeOutExpo",
+        duration: 500,
+        delay: (el, i) => 300 + 30 * i
+    }).add({
+        targets: '.ml13 .letter',
+        translateY: [0, -100],
+        opacity: [1, 0],
+        easing: "easeInExpo",
+        duration: 300,
+        delay: (el, i) => 100 + 30 * i
+    });
 
 /**
  * Base
@@ -34,13 +63,13 @@ const canvas = document.querySelector('canvas.webgl')
 // Scene
 const scene = new THREE.Scene()
 
-const light = new THREE.PointLight(0x99ffff, 2.5, 100, 2)
+const light = new THREE.PointLight(0xCEF4FF, 0.6, 100, 2)
 //const hemiLight = new THREE.HemisphereLight( 0x0000ff, 0x00ff00, 0.6 ); 
 
 light.position.set(0.8, 10, 5.0)
 scene.add(light)
 
-const ambientLight = new THREE.AmbientLight(0x99ffff, 1.2)
+const ambientLight = new THREE.AmbientLight(0xCEF4FF, 1.2)
 scene.add(ambientLight)
 
 /**
@@ -169,7 +198,7 @@ controls.update();
 const renderer = new THREE.WebGLRenderer({
     canvas: canvas,
     alpha: true
-    
+
 })
 renderer.shadowMap.enabled = true;
 renderer.setSize(sizes.width, sizes.height);
@@ -179,8 +208,7 @@ renderer.setSize(sizes.width, sizes.height);
  */
 const clock = new THREE.Clock()
 
-const tick = () =>
-{
+const tick = () => {
     const elapsedTime = clock.getElapsedTime()
 
     // Update controls
