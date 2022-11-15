@@ -46,8 +46,8 @@ html{
     font-weight: 800;
 }
 .subheader{
-    font-size: 16px;
-    font-weight:600;
+    font-size: 52px;
+    font-weight:700;
 }
 
 .subheader2{
@@ -58,10 +58,10 @@ html{
 .phrases{
     position:absolute;
     text-align: center;
-    transform: translate(-50%, -50%);
-    top: 80%;
-    left:50%;
-    width:90%;
+    /* transform: translate(-50%, -50%); */
+    top: 30%;
+    right:2%;
+    width:50%;
 }
 .mochiContainer{
     display: flex;

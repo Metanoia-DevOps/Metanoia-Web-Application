@@ -104,28 +104,28 @@ window.addEventListener('resize', () => {
 
 })
 
-window.addEventListener('dblclick', () => {
-    const  fullscreenElement = document.fullscreenElement || document.webkitFullscreenElement;
-    if (!fullscreenElement){
-        if(canvas.requestFullscreen){
-            canvas.requestFullscreen();
-        }
+// window.addEventListener('dblclick', () => {
+//     const  fullscreenElement = document.fullscreenElement || document.webkitFullscreenElement;
+//     if (!fullscreenElement){
+//         if(canvas.requestFullscreen){
+//             canvas.requestFullscreen();
+//         }
 
-        else if (canvas.webkitRequestFullscreen){
-            canvas.webkitRequestFullscreen();
-        }
-    }
+//         else if (canvas.webkitRequestFullscreen){
+//             canvas.webkitRequestFullscreen();
+//         }
+//     }
 
-    else{
-        if(document.exitFullscreen){
-            document.exitFullscreen();
-        }
+//     else{
+//         if(document.exitFullscreen){
+//             document.exitFullscreen();
+//         }
 
-        else if (canvas.webkitExitFullscreen){
-            document.webkitExitFullscreen();
-        }
-    }
-})
+//         else if (canvas.webkitExitFullscreen){
+//             document.webkitExitFullscreen();
+//         }
+//     }
+// })
 
 /**
  * Camera
