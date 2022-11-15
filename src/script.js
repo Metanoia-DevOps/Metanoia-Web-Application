@@ -14,11 +14,13 @@ const canvas = document.querySelector('canvas.webgl')
 // Scene
 const scene = new THREE.Scene()
 
-const light = new THREE.PointLight(0x99ffff, 0.5, 100, 2)
-light.position.set(0.8, 5, 1.0)
+const light = new THREE.PointLight(0x99ffff, 2.5, 100, 2)
+//const hemiLight = new THREE.HemisphereLight( 0x0000ff, 0x00ff00, 0.6 ); 
+
+light.position.set(0.8, 10, 5.0)
 scene.add(light)
 
-const ambientLight = new THREE.AmbientLight()
+const ambientLight = new THREE.AmbientLight(0x99ffff, 1.2)
 scene.add(ambientLight)
 
 /**
@@ -31,6 +33,30 @@ const mesh = new THREE.Mesh(geometry, material)
 
 const fbxLoader = new FBXLoader()
 fbxLoader.load(
+    'casa.fbx',
+    (object) => {
+        // object.traverse(function (child) {
+        //     if ((child as THREE.Mesh).isMesh) {
+        //         // (child as THREE.Mesh).material = material
+        //         if ((child as THREE.Mesh).material) {
+        //             ((child as THREE.Mesh).material as THREE.MeshBasicMaterial).transparent = false
+        //         }
+        //     }
+        // })
+        object.scale.set(.01, .01, .01)
+        object.position.y = -1;
+        object.castShadow = true;
+        scene.add(object)
+    },
+    (xhr) => {
+        console.log((xhr.loaded / xhr.total) * 100 + '% loaded')
+    },
+    (error) => {
+        console.log(error)
+    }
+)
+
+fbxLoader.load(
     'eevee.hipoly.fbx',
     (object) => {
         // object.traverse(function (child) {
@@ -41,8 +67,11 @@ fbxLoader.load(
         //         }
         //     }
         // })
-        // object.scale.set(.01, .01, .01)
-        object.position.y = -1;
+        object.scale.set(.5, .5, .5)
+        object.position.y = -1.2;
+        object.position.x = 2;
+        object.rotation.y = Math.PI * 0.5
+        object.castShadow = true;
         scene.add(object)
     },
     (xhr) => {
@@ -103,7 +132,7 @@ window.addEventListener('dblclick', () => {
  */
 // Base camera
 const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height, 0.1, 100)
-camera.position.z = 4
+camera.position.z = 20
 camera.position.y = 3
 scene.add(camera)
 
@@ -119,6 +148,7 @@ const renderer = new THREE.WebGLRenderer({
     alpha: true
     
 })
+renderer.shadowMap.enabled = true;
 renderer.setSize(sizes.width, sizes.height);
 
 /**
