@@ -132,13 +132,16 @@ window.addEventListener('dblclick', () => {
  */
 // Base camera
 const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height, 0.1, 100)
-camera.position.z = 20
-camera.position.y = 3
+camera.position.x = 6
+camera.position.y = 0.5
+camera.position.z = 2
 scene.add(camera)
 
 // Controls
 const controls = new OrbitControls(camera, canvas)
 controls.enableDamping = true
+controls.target.set(0, -3, -6);
+controls.update();
 
 /**
  * Renderer
