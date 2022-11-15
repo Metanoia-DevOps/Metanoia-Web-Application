@@ -1,10 +1,9 @@
-
-body{
+body {
     font-family: 'Poppins', sans-serif;
-    color:#CCEFFF;
-    margin:0;
-    padding:0;
-    overflow-x:hidden;
+    color: #CCEFFF;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
     height: 100%;
     background-size: cover;
     background-repeat: repeat-y;
@@ -12,253 +11,286 @@ body{
     background-attachment: fixed;
 }
 
-html{
-    background: url("../img/Background.png")  no-repeat center center fixed; 
+html {
+    background: url("../img/Background.png") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: 100% 150vh;
 }
 
-.container{
-    display:flex;
+.container {
+    display: flex;
     flex-direction: column;
-    width:100%;
-    height:100vh;
+    width: 100%;
+    height: 100vh;
     align-items: center;
     justify-content: center;
 }
 
-.titles{
-    position:absolute;
+.titles {
+    position: absolute;
     text-align: center;
     transform: translate(-50%, -50%);
     top: 15%;
-    left:50%;
+    left: 50%;
 }
-.heading{
+
+.heading {
     font-size: 72px;
     font-weight: 800;
 }
 
-.brandHeading{
+.brandHeading {
     font-size: 72px;
     font-weight: 800;
 }
-.subheader{
+
+.subheader {
     font-size: 52px;
-    font-weight:700;
+    font-weight: 700;
 }
 
-.subheader2{
+.subheader2 {
     font-size: 16px;
-    font-weight:800;
+    font-weight: 800;
 }
 
-.phrases{
-    position:absolute;
+.phrases {
+    position: absolute;
     text-align: center;
     /* transform: translate(-50%, -50%); */
-    top: 30%;
-    right:2%;
-    width:50%;
+    top: 40%;
+    right: 2%;
+    width: 50%;
 }
-.mochiContainer{
+
+.ml6 {
+    position: relative;
+    font-weight: 900;
+    font-size: 2.8em;
+}
+
+.ml6 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.01em;
+    padding-right: 0.05em;
+    padding-bottom: 0.005em;
+    overflow: hidden;
+}
+
+.ml6 .letter {
+    display: inline-block;
+    line-height: 0.1em;
+}
+
+.mochiContainer {
     display: flex;
-    width:100%;
+    width: 100%;
     align-self: center;
     justify-content: center;
 }
-.mochiBlueImg{
-    width:200%;
+
+.mochiBlueImg {
+    width: 200%;
     position: absolute;
 }
 
-.telegramButton{
-    width:20%;
-    padding-bottom:1rem;
+.telegramButton {
+    width: 20%;
+    padding-bottom: 1rem;
 }
 
 form[type=colorPalette] {
     display: flex;
     align-items: center;
     justify-content: center;
-    width:100%;
+    width: 100%;
     flex-direction: column;
 }
 
-input[type=colorPalette]{
-    background-color:#fff;
-    border:none;
+input[type=colorPalette] {
+    background-color: #fff;
+    border: none;
     border-radius: 1.4em;
-    padding:0.7em 1.3em;
-    margin:1rem;
+    padding: 0.7em 1.3em;
+    margin: 1rem;
 }
 
-input[type=color]{
-    background-color:#fff;
-    border:none;
+input[type=color] {
+    background-color: #fff;
+    border: none;
     border-radius: 0.5em;
-    padding:0.3em;
-    margin:1rem;
-}
-button[type=submit]{
-    outline : none ;
-    border : none ;
-    padding : 0.7em 2em ;
-    font-size : 1.1em ;
-    font-weight: 600;
-    border-radius : 1.4em ;
-    background : #D1FDFE ;
-    color : #28B4C1 ;
-    cursor : pointer ;
-    transition : 0.4s ;
-    margin:1rem;
+    padding: 0.3em;
+    margin: 1rem;
 }
 
-.colorsWordsContainer{
-    display:flex;
+button[type=submit] {
+    outline: none;
+    border: none;
+    padding: 0.7em 2em;
+    font-size: 1.1em;
+    font-weight: 600;
+    border-radius: 1.4em;
+    background: #D1FDFE;
+    color: #28B4C1;
+    cursor: pointer;
+    transition: 0.4s;
+    margin: 1rem;
+}
+
+.colorsWordsContainer {
+    display: flex;
     flex-direction: row;
 }
-.formContainer{
-    background : #28B4C1;
+
+.formContainer {
+    background: #28B4C1;
     border-radius: 1.4em;
     box-shadow: inset;
     padding: 1.2rem;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top:-20rem;
+    margin-top: -20rem;
 }
 
-.colors{
-      margin : 0;
-      background : #f1f1f1;
-      min-height : 50vh ;
-      display: flex ;
-      justify-content : center ;
-      align-items : center ;
-      padding: 0 2em ;
+.colors {
+    margin: 0;
+    background: #f1f1f1;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2em;
 }
 
-.colorPaletteContainer{
+.colorPaletteContainer {
     position: absolute;
-    margin-top:35rem;
+    margin-top: 35rem;
     left: 50%;
-    transform : translateX( -50%) ;
+    transform: translateX(-50%);
     max-width: fit-content;
 }
 
 .pallete Button {
-    outline : none ;
-    border : none ;
-    padding : 0.7em 2em ;
-    font-size : 1.1em ;
-    position : absolute ;
-    left : 50%;
-    margin-top:-1rem;
-    transform : translateX( -50%) ;
-    border-radius : 1.4em ;
-    background : #1f1f1f ;
-    color : #fff ;
+    outline: none;
+    border: none;
+    padding: 0.7em 2em;
+    font-size: 1.1em;
+    position: absolute;
+    left: 50%;
+    margin-top: -1rem;
+    transform: translateX(-50%);
+    border-radius: 1.4em;
+    background: #1f1f1f;
+    color: #fff;
     font-weight: 600;
-    cursor : pointer ;
-    transition : 0.4s ;
+    cursor: pointer;
+    transition: 0.4s;
 }
 
 .pallete button :hover {
-    background : #fff;
-    color:#1f1f1f;
-    box-shadow: 0px 0px 15px
-      rgba( 0 , 0 , 0 , 0.2 ) ;
-   }
+    background: #fff;
+    color: #1f1f1f;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
 
 .pallete {
-    background : #fff ;
-    width : 45em ;
-    height : 25em ;
-    border-radius : 20px ;
-    box-shadow : 0px 25px 50px -12px
-      rgba( 0 , 0 , 0 , 0.1 ) ;
-    text-align : center ;
-    color : #1f1f1f ;
-    box-sizing : border-box ;
+    background: #fff;
+    width: 45em;
+    height: 25em;
+    border-radius: 20px;
+    box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #1f1f1f;
+    box-sizing: border-box;
 }
 
 .colors {
-    display : flex ;
-    justify-content : space-between ;
-    align-items : center ;
-    overflow-y : hidden ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-y: hidden;
     overflow-x: hidden;
-    height : 100% ;    
-    border-radius : 20px ;
+    height: 100%;
+    border-radius: 20px;
 }
 
-.colors > div {
- width : 25% ;
+.colors>div {
+    width: 25%;
 }
 
 .color {
- background : #ccc ;
- height : 17em ;
- width : 100% ;
+    background: #ccc;
+    height: 17em;
+    width: 100%;
 }
 
 .colors h4 {
- font-size : 0.9em ;
+    font-size: 0.9em;
 }
 
 .fade-in {
- opacity : 0;
- animation: fadeIn 0.4s ease-in;
+    opacity: 0;
+    animation: fadeIn 0.4s ease-in;
 }
 
-@keyframes fadeIn{
-    to{opacity:1;}
-}
-
-@media only screen and (max-width:480px){
-    .heading{
-        font-size:56px;
+@keyframes fadeIn {
+    to {
+        opacity: 1;
     }
-    .brandHeading{
+}
+
+@media only screen and (max-width:480px) {
+    .heading {
+        font-size: 56px;
+    }
+
+    .brandHeading {
         font-size: 28px;
     }
-    .colorPaletteContainer{
-        margin-top:75rem;
+
+    .colorPaletteContainer {
+        margin-top: 75rem;
     }
-    .subheader{
-        font-size:16px;
+
+    .subheader {
+        font-size: 16px;
     }
-    .telegramButton{
-        width:40%;
+
+    .telegramButton {
+        width: 40%;
     }
-    .mochiContainer{
-        padding-top:2rem;
+
+    .mochiContainer {
+        padding-top: 2rem;
     }
-    .colorsWordsContainer{
+
+    .colorsWordsContainer {
         flex-direction: column;
     }
-    .formContainer{
-        margin-top:0rem;
+
+    .formContainer {
+        margin-top: 0rem;
     }
-    .pallete{
-        width : 25em ;
+
+    .pallete {
+        width: 25em;
     }
 
 }
 
-@media only screen and (min-width:480px){
-    .phrases{
+@media only screen and (min-width:480px) {
+    .phrases {
         font-size: 20px;
     }
 }
 
-@media screen and (max-width:991px) 
-{
-    .telegramButton{
-        width:45%;
+@media screen and (max-width:991px) {
+    .telegramButton {
+        width: 45%;
     }
 }
