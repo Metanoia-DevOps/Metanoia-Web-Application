@@ -113,6 +113,12 @@ html {
     padding-bottom: 1rem;
 }
 
+.button {
+    width: 40%;
+    padding-bottom: 1rem;
+    margin: 5%;
+}
+
 form[type=colorPalette] {
     display: flex;
     align-items: center;
