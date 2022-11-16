@@ -63,13 +63,13 @@ const canvas = document.querySelector('canvas.webgl')
 // Scene
 const scene = new THREE.Scene()
 
-const light = new THREE.PointLight(0xCEF4FF, 0.6, 100, 2)
+const light = new THREE.PointLight(0xC2EAEF, 0.6, 100, 2)
 //const hemiLight = new THREE.HemisphereLight( 0x0000ff, 0x00ff00, 0.6 ); 
 
 light.position.set(0.8, 10, 5.0)
 scene.add(light)
 
-const ambientLight = new THREE.AmbientLight(0xCEF4FF, 1.2)
+const ambientLight = new THREE.AmbientLight(0xC2EAEF, 1.2)
 scene.add(ambientLight)
 
 /**
