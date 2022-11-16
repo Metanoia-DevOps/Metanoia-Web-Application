@@ -197,7 +197,8 @@ controls.update();
  */
 const renderer = new THREE.WebGLRenderer({
     canvas: canvas,
-    alpha: true
+    alpha: true,
+    antialias: true
 
 })
 renderer.shadowMap.enabled = true;
