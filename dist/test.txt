@@ -1,0 +1,21 @@
+ {
+        "Neutral":10,
+        "Fun": 10,
+        "Sorrow":10,
+        "Angry":10,
+        "Joy": 10,
+        "Surprised":10,
+        "A":10,
+        "I":10,
+        "U":10,
+        "E":10,
+        "O":10,
+        "Close":10,
+        "Close_R":20,
+        "Close_L":10,
+	"Neck":{
+            x: 3,
+            y: 3,
+            Z: 3,
+    	},
+}

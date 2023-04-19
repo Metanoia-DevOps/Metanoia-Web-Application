@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.780a3c89.css",
+    "main.js": "/static/js/main.c394aa31.js",
+    "static/js/787.cc27a473.chunk.js": "/static/js/787.cc27a473.chunk.js",
+    "static/media/boxicons.svg": "/static/media/boxicons.9e2b21b135bc7d4c803f.svg",
+    "static/media/boxicons.eot": "/static/media/boxicons.65a8ce52fc5427e8f94d.eot",
+    "static/media/boxicons.woff": "/static/media/boxicons.d12afc36557395143e4b.woff",
+    "static/media/boxicons.ttf": "/static/media/boxicons.db9ddb1898dbd76badca.ttf",
+    "static/media/RomieTrial-Italic.otf": "/static/media/RomieTrial-Italic.d0e9ff3cfdf0391951dd.otf",
+    "static/media/boxicons.woff2": "/static/media/boxicons.df635aaf04cd75132f62.woff2",
+    "static/media/Roobert-Regular.ttf": "/static/media/Roobert-Regular.f767911d84d7dd142987.ttf",
+    "static/media/RomieTrial-Regular.otf": "/static/media/RomieTrial-Regular.a254618acff1ed6456d3.otf",
+    "static/media/Romie-Trial-Black.otf": "/static/media/Romie-Trial-Black.4788724c472929581aff.otf",
+    "static/media/Romie-Trial-Medium.otf": "/static/media/Romie-Trial-Medium.6a574e0cb78ec0d81567.otf",
+    "static/media/Romie-Trial-Bold.otf": "/static/media/Romie-Trial-Bold.42157c250bc3fd0b31b3.otf",
+    "static/media/Ninna-TRIAL.otf": "/static/media/Ninna-TRIAL.736da96260170df3f61a.otf",
+    "static/media/Kalice-TRIAL.otf": "/static/media/Kalice-TRIAL.a68cc6cfb317adb5e635.otf",
+    "index.html": "/index.html",
+    "main.780a3c89.css.map": "/static/css/main.780a3c89.css.map",
+    "main.c394aa31.js.map": "/static/js/main.c394aa31.js.map",
+    "787.cc27a473.chunk.js.map": "/static/js/787.cc27a473.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.780a3c89.css",
+    "static/js/main.c394aa31.js"
+  ]
+}
